@@ -3,7 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import {raleway} from "../styles/fonts";
 import { useState, useEffect } from 'react';
-
+//
 async function getJobs(search) {
     try {
         const response = await fetch(
