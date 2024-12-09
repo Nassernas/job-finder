@@ -15,7 +15,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/find-jobs"  className="text-gray-300 hover:text-gray-100">
+              <Link href="./find-jobs"  className="text-gray-300 hover:text-gray-100">
                 Find Jobs
               </Link>
             </li>
