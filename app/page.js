@@ -2,13 +2,14 @@ import Image from "next/image";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import {raleway} from "./styles/fonts";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={`flex flex-col min-h-screen ${raleway.className}`}>
+    <div className={`flex flex-col min-h-screen bg-white ${raleway.className}`}>
     
       <Header />
-      <main className='flex-grow flex flex-col items-center justify-center mt-12 mb-12'>
+      <main className='flex-grow flex flex-col items-center justify-center mt-12 mb-12 text-gray-700 '>
       <h1 className="text-6xl font-bold mb-4">Achilles Talent Solutions</h1>
       <p className='text-center text-lg mb-8 px-5 max-w-3xl'>
         Welcome to Achilles Talent Solutions. We are a recruitment agency that
@@ -25,12 +26,16 @@ export default function Home() {
         />
         </div>
         <div className="flex space-x-4 mt-8">
+          <Link href="/find-jobs">
           <button className="bg-[#033941] text-white px-8 py-4 rounded-full hover:bg-[#022b31] shadow-lg">
             Find Jobs
           </button>
+          </Link>
+          <Link href="/contact">
           <button className="border border-[#033941] text-[#033941] px-8 py-4 rounded-full hover:bg-gray-100 shadow-lg">
             Contact Us
           </button>
+          </Link>
         </div>
 
       </main>

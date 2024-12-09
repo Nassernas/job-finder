@@ -51,16 +51,16 @@ export default function Page() {
 
 
       return (
-        <div className={`flex flex-col min-h-screen ${raleway.className}`}>
+        <div className={`flex flex-col min-h-screen bg-white ${raleway.className}`}>
       <Header />
       <main className='flex-grow flex flex-col items-center justify-center mt-12 mb-12'>
-        <h1 className="text-6xl font-bold mb-4">Find Jobs</h1>
+        <h1 className="text-6xl  text-gray-700 font-bold mb-4">Find Jobs</h1>
         <form onSubmit={handleSearch} className="mb-8 w-full max-w-3xl">
           <input
             type="text"
             name="search"
             placeholder="Enter job title or keywords"
-            className="w-full px-4 py-2 border border-[#033941] rounded-full"
+            className="w-full px-4 py-2 border border-[#033941] rounded-full  text-gray-700 "
           />
           <button type="submit" className="mt-4 bg-[#033941] text-white px-4 py-2 rounded-full hover:bg-[#022b31]">
             Search
